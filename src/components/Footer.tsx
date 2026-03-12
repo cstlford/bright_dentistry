@@ -145,9 +145,7 @@ export default function Footer() {
             © {new Date().getFullYear()} Bright Family Dentistry · All rights
             reserved.
           </p>
-          <p className="text-white/25 text-xs">
-            1421 Armor St., Chattanooga, TN 37412
-          </p>
+
         </div>
       </div>
     </footer>

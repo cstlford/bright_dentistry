@@ -39,7 +39,7 @@ export default function AboutSection() {
             {/* Photo container */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/dr-habib.webp"
+                src="/robina-habib.PNG"
                 alt="Dr. Robina Habib — Bright Family Dentistry"
                 width={600}
                 height={750}

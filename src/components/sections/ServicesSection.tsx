@@ -10,36 +10,42 @@ const SERVICES = [
     tagline: "Perfect your smile",
     details: "Veneers, bonding, smile design, and full-mouth restorations that give you the confidence to show every tooth.",
     image:   "/cosmetic.jpeg",
+    slug:    "cosmetic-dentistry",
   },
   {
     title:   "Teeth Whitening",
     tagline: "Brilliantly bright results",
     details: "Professional in-office and take-home whitening treatments for a noticeably whiter smile — safely and effectively.",
     image:   "/whitening.jpeg",
+    slug:    "teeth-whitening",
   },
   {
     title:   "Family Dentistry",
     tagline: "Care for every generation",
     details: "Preventive checkups, cleanings, sealants, and education for patients of all ages — from first teeth to senior smiles.",
     image:   "/family.jpeg",
+    slug:    "family-dentistry",
   },
   {
     title:   "Emergency Care",
     tagline: "Relief when you need it",
     details: "Toothaches, broken teeth, lost fillings — we prioritize urgent cases and work to get you out of pain fast.",
     image:   "/emergency.jpeg",
+    slug:    "emergency-care",
   },
   {
     title:   "Dental Implants",
     tagline: "Permanent, natural-looking",
     details: "Replace missing teeth with titanium implants that look, feel, and function just like your natural teeth.",
     image:   "/implants.jpeg",
+    slug:    "dental-implants",
   },
   {
     title:   "Invisalign",
     tagline: "Straighten discreetly",
     details: "Clear, removable aligners that gradually move your teeth into place — no wires, no brackets, no disruption to your life.",
     image:   "/invisalign.jpeg",
+    slug:    "invisalign",
   },
 ];
 
@@ -119,7 +125,7 @@ function ServiceCard({
       style={{ transitionDelay: `${index * 80}ms` }}
     >
     <Link
-      href="/services"
+      href={`/services#${svc.slug}`}
       className="service-card group relative aspect-[4/3] rounded-2xl overflow-hidden cursor-pointer block"
     >
       {/* Background photo */}
