@@ -82,12 +82,12 @@ export default function AppointmentModal({ open, onOpenChange }: AppointmentModa
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-[540px] p-0 overflow-hidden rounded-2xl border-0 shadow-2xl">
         {/* Header stripe */}
-        <div className="bg-[#237E7B] px-8 py-6">
+        <div className="bg-[#0C145D] px-8 py-6">
           <DialogHeader>
             <DialogTitle className="text-white text-2xl font-display font-semibold">
               Request an Appointment
             </DialogTitle>
-            <DialogDescription className="text-teal-100 mt-1 text-sm leading-relaxed">
+            <DialogDescription className="text-blue-100 mt-1 text-sm leading-relaxed">
               Share your preferred day and time below — a member of our team will reach out to confirm your visit. Scheduling is not guaranteed until confirmed by our staff.
             </DialogDescription>
           </DialogHeader>
@@ -97,9 +97,9 @@ export default function AppointmentModal({ open, onOpenChange }: AppointmentModa
         <div className="px-8 py-6">
           {status === "success" ? (
             <div className="text-center py-8">
-              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#E8F4F4] mb-4">
+              <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[#E8EBF8] mb-4">
                 <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-                  <circle cx="16" cy="16" r="16" fill="#237E7B" />
+                  <circle cx="16" cy="16" r="16" fill="#0C145D" />
                   <path d="M9 16l5 5 9-9" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
@@ -109,7 +109,7 @@ export default function AppointmentModal({ open, onOpenChange }: AppointmentModa
               </p>
               <button
                 onClick={reset}
-                className="mt-6 text-sm text-[#237E7B] font-semibold hover:underline"
+                className="mt-6 text-sm text-[#0C145D] font-semibold hover:underline"
               >
                 Close
               </button>
@@ -127,7 +127,7 @@ export default function AppointmentModal({ open, onOpenChange }: AppointmentModa
                     onChange={handleChange}
                     placeholder="Jane Smith"
                     required
-                    className="border-gray-200 focus:border-[#237E7B] focus:ring-[#237E7B]/20"
+                    className="border-gray-200 focus:border-[#0C145D] focus:ring-[#0C145D]/20"
                   />
                 </div>
                 <div className="col-span-2 sm:col-span-1">
@@ -141,7 +141,7 @@ export default function AppointmentModal({ open, onOpenChange }: AppointmentModa
                     onChange={handleChange}
                     placeholder="(423) 000-0000"
                     required
-                    className="border-gray-200 focus:border-[#237E7B] focus:ring-[#237E7B]/20"
+                    className="border-gray-200 focus:border-[#0C145D] focus:ring-[#0C145D]/20"
                   />
                 </div>
               </div>
@@ -156,7 +156,7 @@ export default function AppointmentModal({ open, onOpenChange }: AppointmentModa
                   value={form.email}
                   onChange={handleChange}
                   placeholder="jane@example.com"
-                  className="border-gray-200 focus:border-[#237E7B] focus:ring-[#237E7B]/20"
+                  className="border-gray-200 focus:border-[#0C145D] focus:ring-[#0C145D]/20"
                 />
               </div>
 
@@ -170,7 +170,7 @@ export default function AppointmentModal({ open, onOpenChange }: AppointmentModa
                     type="date"
                     value={form.preferredDate}
                     onChange={handleChange}
-                    className="border-gray-200 focus:border-[#237E7B] focus:ring-[#237E7B]/20"
+                    className="border-gray-200 focus:border-[#0C145D] focus:ring-[#0C145D]/20"
                   />
                 </div>
                 <div>
@@ -181,7 +181,7 @@ export default function AppointmentModal({ open, onOpenChange }: AppointmentModa
                     name="preferredTime"
                     value={form.preferredTime}
                     onChange={handleChange}
-                    className="w-full h-9 rounded-md border border-gray-200 bg-white px-3 text-sm text-gray-700 focus:outline-none focus:border-[#237E7B] focus:ring-2 focus:ring-[#237E7B]/20"
+                    className="w-full h-9 rounded-md border border-gray-200 bg-white px-3 text-sm text-gray-700 focus:outline-none focus:border-[#0C145D] focus:ring-2 focus:ring-[#0C145D]/20"
                   >
                     <option value="">Select time</option>
                     {TIME_SLOTS.map((t) => (
@@ -199,7 +199,7 @@ export default function AppointmentModal({ open, onOpenChange }: AppointmentModa
                   name="service"
                   value={form.service}
                   onChange={handleChange}
-                  className="w-full h-9 rounded-md border border-gray-200 bg-white px-3 text-sm text-gray-700 focus:outline-none focus:border-[#237E7B] focus:ring-2 focus:ring-[#237E7B]/20"
+                  className="w-full h-9 rounded-md border border-gray-200 bg-white px-3 text-sm text-gray-700 focus:outline-none focus:border-[#0C145D] focus:ring-2 focus:ring-[#0C145D]/20"
                 >
                   <option value="">Select a service</option>
                   {SERVICES.map((s) => (
@@ -218,7 +218,7 @@ export default function AppointmentModal({ open, onOpenChange }: AppointmentModa
                   onChange={handleChange}
                   placeholder="Tell us anything we should know…"
                   rows={3}
-                  className="border-gray-200 focus:border-[#237E7B] focus:ring-[#237E7B]/20 resize-none"
+                  className="border-gray-200 focus:border-[#0C145D] focus:ring-[#0C145D]/20 resize-none"
                 />
               </div>
 
@@ -235,7 +235,7 @@ export default function AppointmentModal({ open, onOpenChange }: AppointmentModa
               <button
                 type="submit"
                 disabled={status === "loading"}
-                className="w-full group flex items-center justify-center gap-3 bg-[#237E7B] hover:bg-[#1A5C59] text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 disabled:opacity-60"
+                className="w-full group flex items-center justify-center gap-3 bg-[#0C145D] hover:bg-[#08103F] text-white font-semibold py-3 px-6 rounded-xl transition-all duration-300 disabled:opacity-60"
               >
                 {status === "loading" ? (
                   <>

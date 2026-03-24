@@ -27,13 +27,13 @@ export default function LocationSection() {
           <div className="text-center max-w-2xl mx-auto mb-16">
             <div className="flex items-center justify-center gap-3 mb-5">
               <span className="deco-line" />
-              <span className="text-[#237E7B] text-sm font-semibold uppercase tracking-widest">
+              <span className="text-[#0C145D] text-sm font-semibold uppercase tracking-widest">
                 Find Us
               </span>
               <span className="deco-line" />
             </div>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
-              Visit Our <span className="text-[#237E7B]">Chattanooga</span>{" "}
+              Visit Our <span className="text-[#0C145D]">Chattanooga</span>{" "}
               Office
             </h2>
           </div>
@@ -50,11 +50,11 @@ export default function LocationSection() {
             >
               {/* Address card */}
               <div className="bg-white rounded-2xl p-7 shadow-sm border border-gray-100 mb-5">
-                <h3 className="text-[#237E7B] font-semibold text-xs uppercase tracking-widest mb-4">
+                <h3 className="text-[#0C145D] font-semibold text-xs uppercase tracking-widest mb-4">
                   Location
                 </h3>
                 <div className="flex items-start gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-[#E8F4F4] flex items-center justify-center text-[#237E7B]">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-[#E8EBF8] flex items-center justify-center text-[#0C145D]">
                     <svg
                       viewBox="0 0 24 24"
                       fill="none"
@@ -79,7 +79,7 @@ export default function LocationSection() {
                       href="https://maps.google.com/?q=1421+Armor+St+Chattanooga+TN+37412"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 mt-2 text-[#237E7B] text-xs font-semibold hover:underline"
+                      className="inline-flex items-center gap-1 mt-2 text-[#0C145D] text-xs font-semibold hover:underline"
                     >
                       Get Directions →
                     </a>
@@ -89,11 +89,11 @@ export default function LocationSection() {
 
               {/* Phone card */}
               <div className="bg-white rounded-2xl p-7 shadow-sm border border-gray-100 mb-5">
-                <h3 className="text-[#237E7B] font-semibold text-xs uppercase tracking-widest mb-4">
+                <h3 className="text-[#0C145D] font-semibold text-xs uppercase tracking-widest mb-4">
                   Contact
                 </h3>
                 <div className="flex items-center gap-4">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-[#E8F4F4] flex items-center justify-center text-[#237E7B]">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-[#E8EBF8] flex items-center justify-center text-[#0C145D]">
                     <svg
                       viewBox="0 0 24 24"
                       fill="none"
@@ -111,7 +111,7 @@ export default function LocationSection() {
                     </p>
                     <a
                       href="tel:4235412777"
-                      className="text-gray-800 font-bold text-lg hover:text-[#237E7B] transition-colors"
+                      className="text-gray-800 font-bold text-lg hover:text-[#0C145D] transition-colors"
                     >
                       (423) 541-2777
                     </a>
@@ -121,7 +121,7 @@ export default function LocationSection() {
 
               {/* Hours card */}
               <div className="bg-white rounded-2xl p-7 shadow-sm border border-gray-100 mb-7">
-                <h3 className="text-[#237E7B] font-semibold text-xs uppercase tracking-widest mb-4">
+                <h3 className="text-[#0C145D] font-semibold text-xs uppercase tracking-widest mb-4">
                   Office Hours
                 </h3>
                 <div className="space-y-3">
@@ -148,7 +148,7 @@ export default function LocationSection() {
               {/* CTA */}
               <button
                 onClick={() => setModalOpen(true)}
-                className="group w-full flex items-center justify-center gap-3 bg-[#237E7B] hover:bg-[#1A5C59] text-white font-semibold py-4 px-6 rounded-2xl transition-all duration-300 shadow-lg shadow-[#237E7B]/25 hover:shadow-xl hover:shadow-[#237E7B]/30 hover:-translate-y-0.5"
+                className="group w-full flex items-center justify-center gap-3 bg-[#0C145D] hover:bg-[#08103F] text-white font-semibold py-4 px-6 rounded-2xl transition-all duration-300 shadow-lg shadow-[#0C145D]/25 hover:shadow-xl hover:shadow-[#0C145D]/30 hover:-translate-y-0.5"
               >
                 Request an Appointment
                 <span className="group-hover:translate-x-1 transition-transform duration-200 text-lg">
@@ -181,7 +181,7 @@ export default function LocationSection() {
                 />
                 {/* Map overlay label */}
                 <div className="absolute top-4 left-4 bg-white rounded-xl px-4 py-2.5 shadow-md border border-gray-100 flex items-center gap-2">
-                  <div className="w-2 h-2 rounded-full bg-[#237E7B] animate-pulse" />
+                  <div className="w-2 h-2 rounded-full bg-[#0C145D] animate-pulse" />
                   <span className="text-gray-700 text-xs font-semibold">
                     Bright Family Dentistry
                   </span>

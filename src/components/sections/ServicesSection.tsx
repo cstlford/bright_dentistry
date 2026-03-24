@@ -65,18 +65,18 @@ export default function ServicesSection() {
         >
           <div className="flex items-center justify-center gap-3 mb-5">
             <span className="deco-line" />
-            <span className="text-[#237E7B] text-sm font-semibold uppercase tracking-widest">
+            <span className="text-[#0C145D] text-sm font-semibold uppercase tracking-widest">
               What We Offer
             </span>
             <span className="deco-line" />
           </div>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
             Services Designed for{" "}
-            <span className="text-[#237E7B]">Your Smile</span>
+            <span className="text-[#0C145D]">Your Smile</span>
           </h2>
           <p className="mt-4 text-gray-500 text-lg">
             Hover over any service to learn more, or explore the full{" "}
-            <Link href="/services" className="text-[#237E7B] font-semibold hover:underline underline-offset-2">
+            <Link href="/services" className="text-[#0C145D] font-semibold hover:underline underline-offset-2">
               list
             </Link>
             .
@@ -94,10 +94,10 @@ export default function ServicesSection() {
         <div className="mt-12 text-center">
           <Link
             href="/services"
-            className="group inline-flex items-center gap-2 text-[#237E7B] font-semibold text-sm hover:gap-4 transition-all duration-300"
+            className="group inline-flex items-center gap-2 text-[#0C145D] font-semibold text-sm hover:gap-4 transition-all duration-300"
           >
             View all services
-            <span className="inline-flex items-center justify-center w-8 h-8 rounded-full border-2 border-[#237E7B] group-hover:bg-[#237E7B] group-hover:text-white transition-all duration-300">
+            <span className="inline-flex items-center justify-center w-8 h-8 rounded-full border-2 border-[#0C145D] group-hover:bg-[#0C145D] group-hover:text-white transition-all duration-300">
               <svg width="12" height="12" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M2 7h10M8 3l4 4-4 4" />
               </svg>
@@ -136,11 +136,11 @@ function ServiceCard({
         className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
       />
       {/* Dark tint — lifts slightly on hover */}
-      <div className="absolute inset-0 bg-[#0D2E2D]/55 transition-opacity duration-500 group-hover:bg-[#0D2E2D]/40" />
+      <div className="absolute inset-0 bg-[#050A2A]/55 transition-opacity duration-500 group-hover:bg-[#050A2A]/40" />
 
       {/* Always-visible title */}
       <div className="absolute inset-0 flex flex-col justify-end p-6 z-10">
-        <p className="text-[#4BBFBC] text-xs font-semibold uppercase tracking-widest mb-1.5 transform translate-y-0 transition-transform duration-500 group-hover:-translate-y-2">
+        <p className="text-white/70 text-xs font-semibold uppercase tracking-widest mb-1.5 transform translate-y-0 transition-transform duration-500 group-hover:-translate-y-2">
           {svc.tagline}
         </p>
         <h3 className="text-white text-xl font-display font-bold leading-tight transform translate-y-0 transition-transform duration-500 group-hover:-translate-y-2">
@@ -150,10 +150,10 @@ function ServiceCard({
 
       {/* Hover overlay — slides up */}
       <div className="service-overlay absolute inset-0 bg-black/60 backdrop-blur-sm flex flex-col justify-center p-6 z-20">
-        <p className="text-[#4BBFBC] text-xs font-semibold uppercase tracking-widest mb-2">{svc.tagline}</p>
+        <p className="text-white/70 text-xs font-semibold uppercase tracking-widest mb-2">{svc.tagline}</p>
         <h3 className="text-white text-xl font-display font-bold mb-3">{svc.title}</h3>
         <p className="text-white/80 text-sm leading-relaxed">{svc.details}</p>
-        <div className="mt-4 flex items-center gap-2 text-[#4BBFBC] text-sm font-semibold">
+        <div className="mt-4 flex items-center gap-2 text-[#1967D2] text-sm font-semibold">
           Learn more
           <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
             <path d="M2 7h10M8 3l4 4-4 4" />

@@ -19,14 +19,14 @@ export default function HeroSection() {
   return (
     <>
       {/* Full-screen hero */}
-      <section className="relative min-h-screen flex items-center overflow-hidden bg-[#124240]">
+      <section className="relative min-h-screen flex items-center overflow-hidden bg-[#050A2A]">
         {/* ── Background layer ─────────────────────────────── */}
         <div className="absolute inset-0 z-0">
           {/* Gradient overlay */}
-          <div className="absolute inset-0 bg-gradient-to-br from-[#124240] via-[#1A5C59] to-[#237E7B] opacity-95" />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#050A2A] via-[#08103F] to-[#0C145D] opacity-95" />
           {/* Decorative circles */}
-          <div className="absolute -top-32 -right-32 w-[700px] h-[700px] rounded-full bg-[#237E7B]/30 blur-3xl" />
-          <div className="absolute -bottom-48 -left-24 w-[500px] h-[500px] rounded-full bg-[#2FA8A5]/20 blur-3xl" />
+          <div className="absolute -top-32 -right-32 w-[700px] h-[700px] rounded-full bg-[#0C145D]/30 blur-3xl" />
+          <div className="absolute -bottom-48 -left-24 w-[500px] h-[500px] rounded-full bg-[#1455B8]/20 blur-3xl" />
           {/* Grid texture */}
           <div
             className="absolute inset-0 opacity-5"
@@ -47,8 +47,8 @@ export default function HeroSection() {
                 loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
             >
-              <span className="w-8 h-px bg-[#4BBFBC]" />
-              <span className="text-[#4BBFBC] text-sm font-semibold uppercase tracking-widest">
+              <span className="w-8 h-px bg-[#1967D2]" />
+              <span className="text-[#1967D2] text-sm font-semibold uppercase tracking-widest">
                 Bright Family Dentistry
               </span>
             </div>
@@ -74,7 +74,7 @@ export default function HeroSection() {
                 Smile
               </span>
               <span
-                className={`block text-4xl md:text-5xl lg:text-6xl font-light text-[#4BBFBC] transition-all duration-700 delay-300 ${
+                className={`block text-4xl md:text-5xl lg:text-6xl font-light text-[#1967D2] transition-all duration-700 delay-300 ${
                   loaded
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-6"
@@ -117,7 +117,7 @@ export default function HeroSection() {
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      className="group-hover:text-[#237E7B] transition-colors"
+                      className="group-hover:text-[#0C145D] transition-colors"
                     >
                       <path d="M2 8h12M9 3l5 5-5 5" />
                     </svg>
@@ -168,7 +168,7 @@ export default function HeroSection() {
               {/* Main circle */}
               <div className="absolute inset-8 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 flex items-center justify-center">
                 {/* Inner glow */}
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#4BBFBC]/20 to-transparent" />
+                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#1967D2]/20 to-transparent" />
 
                 {/* Tooth icon */}
                 <svg
@@ -218,7 +218,7 @@ export default function HeroSection() {
                 </p>
               </div>
               <div
-                className="absolute bottom-0 right-4 bg-[#4BBFBC]/30 backdrop-blur-md border border-[#4BBFBC]/30 rounded-2xl px-4 py-2.5 animate-float"
+                className="absolute bottom-0 right-4 bg-[#1967D2]/30 backdrop-blur-md border border-[#1967D2]/30 rounded-2xl px-4 py-2.5 animate-float"
                 style={{ animationDelay: "0.9s" }}
               >
                 <p className="text-white text-xs font-medium opacity-70">

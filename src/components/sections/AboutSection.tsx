@@ -33,8 +33,8 @@ export default function AboutSection() {
             }`}
           >
             {/* Background decoration */}
-            <div className="absolute -bottom-6 -left-6 w-full h-full bg-[#237E7B]/8 rounded-3xl" />
-            <div className="absolute -top-4 -right-4 w-24 h-24 rounded-full border-4 border-[#237E7B]/20" />
+            <div className="absolute -bottom-6 -left-6 w-full h-full bg-[#0C145D]/8 rounded-3xl" />
+            <div className="absolute -top-4 -right-4 w-24 h-24 rounded-full border-4 border-[#0C145D]/20" />
 
             {/* Photo container */}
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
@@ -47,14 +47,14 @@ export default function AboutSection() {
                 style={{ aspectRatio: "4/5" }}
               />
               {/* Gradient overlay at bottom */}
-              <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#124240]/80 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#050A2A]/80 to-transparent" />
 
               {/* Name plate */}
               <div className="absolute bottom-6 left-6 right-6">
                 <p className="text-white font-display font-bold text-xl">
                   Dr. Robina Habib
                 </p>
-                <p className="text-[#4BBFBC] text-sm font-medium mt-0.5">
+                <p className="text-white/70 text-sm font-medium mt-0.5">
                   DDS — General & Cosmetic Dentistry
                 </p>
               </div>
@@ -67,7 +67,7 @@ export default function AboutSection() {
                   key={s.label}
                   className="bg-white rounded-xl p-3 text-center shadow-sm border border-gray-100"
                 >
-                  <p className="text-[#237E7B] font-bold text-lg leading-tight">
+                  <p className="text-[#0C145D] font-bold text-lg leading-tight">
                     {s.value}
                   </p>
                   <p className="text-gray-500 text-xs mt-0.5 leading-tight">
@@ -89,13 +89,13 @@ export default function AboutSection() {
           >
             <div className="flex items-center gap-3 mb-5">
               <span className="deco-line" />
-              <span className="text-[#237E7B] text-sm font-semibold uppercase tracking-widest">
+              <span className="text-[#0C145D] text-sm font-semibold uppercase tracking-widest">
                 Meet Your Dentist
               </span>
             </div>
 
             <h2 className="font-display text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-6">
-              Dr. Robina <span className="text-[#237E7B]">Habib</span>
+              Dr. Robina <span className="text-[#0C145D]">Habib</span>
             </h2>
 
             <p className="text-gray-600 text-lg leading-relaxed mb-5">
@@ -125,22 +125,22 @@ export default function AboutSection() {
             </p>
 
             {/* Signature-style accent */}
-            <div className="border-l-4 border-[#237E7B] pl-5 mb-8">
+            <div className="border-l-4 border-[#0C145D] pl-5 mb-8">
               <p className="text-gray-700 italic text-base leading-relaxed">
                 &ldquo;My greatest reward is seeing a patient leave with a smile
                 they&rsquo;re proud to share with the world.&rdquo;
               </p>
-              <p className="text-[#237E7B] font-semibold text-sm mt-2">
+              <p className="text-[#0C145D] font-semibold text-sm mt-2">
                 — Dr. Robina Habib
               </p>
             </div>
 
             <Link
               href="/about"
-              className="group inline-flex items-center gap-3 text-[#237E7B] font-semibold"
+              className="group inline-flex items-center gap-3 text-[#0C145D] font-semibold"
             >
               Learn more about Dr. Habib
-              <span className="inline-flex items-center justify-center w-8 h-8 rounded-full border-2 border-[#237E7B] group-hover:bg-[#237E7B] group-hover:text-white transition-all duration-300 group-hover:translate-x-1">
+              <span className="inline-flex items-center justify-center w-8 h-8 rounded-full border-2 border-[#0C145D] group-hover:bg-[#0C145D] group-hover:text-white transition-all duration-300 group-hover:translate-x-1">
                 <svg
                   width="12"
                   height="12"

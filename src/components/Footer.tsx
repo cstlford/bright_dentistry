@@ -19,7 +19,7 @@ const LINKS = {
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0D2E2D] text-white">
+    <footer className="bg-[#050A2A] text-white">
       {/* Main footer */}
       <div className="max-w-7xl mx-auto px-6 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
@@ -37,8 +37,8 @@ export default function Footer() {
               Serving cosmetic, emergency, family &amp; Medicaid patients.
             </p>
             {/* Accepting badge */}
-            <div className="inline-flex items-center gap-2 bg-[#237E7B]/20 border border-[#237E7B]/30 rounded-full px-4 py-2 text-xs text-[#4BBFBC] font-medium">
-              <span className="w-1.5 h-1.5 rounded-full bg-[#4BBFBC] animate-pulse" />
+            <div className="inline-flex items-center gap-2 bg-[#0C145D]/20 border border-[#0C145D]/30 rounded-full px-4 py-2 text-xs text-[#1967D2] font-medium">
+              <span className="w-1.5 h-1.5 rounded-full bg-[#1967D2] animate-pulse" />
               Accepting New Patients
             </div>
           </div>
@@ -94,7 +94,7 @@ export default function Footer() {
                   stroke="currentColor"
                   strokeWidth="1.6"
                   strokeLinecap="round"
-                  className="w-4 h-4 text-[#237E7B] mt-0.5 flex-shrink-0"
+                  className="w-4 h-4 text-[#1967D2] mt-0.5 flex-shrink-0"
                 >
                   <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
                   <circle cx="12" cy="10" r="3" />
@@ -112,7 +112,7 @@ export default function Footer() {
                   stroke="currentColor"
                   strokeWidth="1.6"
                   strokeLinecap="round"
-                  className="w-4 h-4 text-[#237E7B] flex-shrink-0"
+                  className="w-4 h-4 text-[#1967D2] flex-shrink-0"
                 >
                   <path d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 0112 18.85a19.5 19.5 0 01-5.1-5.1 19.79 19.79 0 01-3.07-8.67A2 2 0 015.73 3h3a2 2 0 012 1.72c.127.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L9.91 10.91A16 16 0 0016.09 17l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.573 2.81.7A2 2 0 0122 16.92z" />
                 </svg>

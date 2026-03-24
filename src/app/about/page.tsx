@@ -84,10 +84,10 @@ export default function AboutPage() {
   return (
     <>
       {/* ── Hero ───────────────────────────────────────────── */}
-      <section className="relative pt-32 pb-24 bg-[#124240] overflow-hidden">
+      <section className="relative pt-32 pb-24 bg-[#050A2A] overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full bg-[#237E7B]/30 blur-3xl" />
-          <div className="absolute -bottom-48 -left-24 w-[400px] h-[400px] rounded-full bg-[#2FA8A5]/20 blur-3xl" />
+          <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full bg-[#0C145D]/30 blur-3xl" />
+          <div className="absolute -bottom-48 -left-24 w-[400px] h-[400px] rounded-full bg-[#1455B8]/20 blur-3xl" />
           <div
             className="absolute inset-0 opacity-5"
             style={{
@@ -98,16 +98,16 @@ export default function AboutPage() {
         </div>
         <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
           <div className="flex items-center justify-center gap-3 mb-5">
-            <span className="w-8 h-px bg-[#4BBFBC]" />
-            <span className="text-[#4BBFBC] text-sm font-semibold uppercase tracking-widest">
+            <span className="w-8 h-px bg-[#1967D2]" />
+            <span className="text-[#1967D2] text-sm font-semibold uppercase tracking-widest">
               Meet Your Dentist
             </span>
-            <span className="w-8 h-px bg-[#4BBFBC]" />
+            <span className="w-8 h-px bg-[#1967D2]" />
           </div>
           <h1 className="font-display text-5xl md:text-6xl font-bold text-white leading-tight mb-4">
             Dr. Robina Habib
           </h1>
-          <p className="text-[#4BBFBC] text-lg font-medium tracking-wide">
+          <p className="text-[#1967D2] text-lg font-medium tracking-wide">
             DMD &mdash; General &amp; Cosmetic Dentistry
           </p>
           <p className="text-white/55 mt-2 text-base">
@@ -143,13 +143,13 @@ export default function AboutPage() {
       <PersonalSection />
 
       {/* ── CTA ────────────────────────────────────────────── */}
-      <section className="relative py-20 overflow-hidden bg-[#124240]">
+      <section className="relative py-20 overflow-hidden bg-[#0C145D]">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full bg-[#237E7B]/25 blur-3xl" />
-          <div className="absolute -bottom-24 -left-24 w-[400px] h-[400px] rounded-full bg-[#2FA8A5]/15 blur-3xl" />
+          <div className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full bg-[#0C145D]/25 blur-3xl" />
+          <div className="absolute -bottom-24 -left-24 w-[400px] h-[400px] rounded-full bg-[#1455B8]/15 blur-3xl" />
         </div>
         <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
-          <p className="text-[#7ED8D5] text-sm font-semibold uppercase tracking-widest mb-4">
+          <p className="text-[#7AB8F5] text-sm font-semibold uppercase tracking-widest mb-4">
             Ready to Meet Dr. Habib?
           </p>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
@@ -167,7 +167,7 @@ export default function AboutPage() {
               <span className="text-lg font-semibold">
                 Request an Appointment
               </span>
-              <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-white/40 group-hover:border-white group-hover:bg-white group-hover:text-[#237E7B] transition-all duration-300 group-hover:translate-x-1">
+              <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-white/40 group-hover:border-white group-hover:bg-white group-hover:text-[#0C145D] transition-all duration-300 group-hover:translate-x-1">
                 <svg
                   width="18"
                   height="18"
@@ -234,8 +234,8 @@ function BioSection({ onBooking }: { onBooking: () => void }) {
                 : "opacity-0 -translate-x-10"
             }`}
           >
-            <div className="absolute -bottom-6 -left-6 w-full h-full bg-[#237E7B]/8 rounded-3xl" />
-            <div className="absolute -top-4 -right-4 w-24 h-24 rounded-full border-4 border-[#237E7B]/20" />
+            <div className="absolute -bottom-6 -left-6 w-full h-full bg-[#0C145D]/8 rounded-3xl" />
+            <div className="absolute -top-4 -right-4 w-24 h-24 rounded-full border-4 border-[#0C145D]/20" />
 
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <Image
@@ -246,18 +246,18 @@ function BioSection({ onBooking }: { onBooking: () => void }) {
                 className="w-full object-cover object-top"
                 style={{ aspectRatio: "4/5" }}
               />
-              <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#124240]/80 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#050A2A]/80 to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
                 <p className="text-white font-display font-bold text-xl">
                   Dr. Robina Habib
                 </p>
-                <p className="text-[#4BBFBC] text-sm font-medium mt-0.5">
+                <p className="text-[#1967D2] text-sm font-medium mt-0.5">
                   DMD &mdash; General &amp; Cosmetic Dentistry
                 </p>
               </div>
             </div>
 
-            <div className="absolute -bottom-3 -right-3 w-16 h-16 rounded-full bg-[#237E7B]/15" />
+            <div className="absolute -bottom-3 -right-3 w-16 h-16 rounded-full bg-[#0C145D]/15" />
           </div>
 
           {/* Text */}
@@ -271,14 +271,14 @@ function BioSection({ onBooking }: { onBooking: () => void }) {
           >
             <div className="flex items-center gap-3 mb-5">
               <span className="deco-line" />
-              <span className="text-[#237E7B] text-sm font-semibold uppercase tracking-widest">
+              <span className="text-[#0C145D] text-sm font-semibold uppercase tracking-widest">
                 About Dr. Habib
               </span>
             </div>
 
             <h2 className="font-display text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-6">
               Dedicated to{" "}
-              <span className="text-[#237E7B]">Patient-Centered</span> Care
+              <span className="text-[#0C145D]">Patient-Centered</span> Care
             </h2>
 
             <p className="text-gray-600 text-lg leading-relaxed mb-5">
@@ -345,10 +345,10 @@ function BioSection({ onBooking }: { onBooking: () => void }) {
 
             <button
               onClick={onBooking}
-              className="group inline-flex items-center gap-3 text-[#237E7B] font-semibold text-sm hover:gap-4 transition-all duration-300"
+              className="group inline-flex items-center gap-3 text-[#0C145D] font-semibold text-sm hover:gap-4 transition-all duration-300"
             >
               Request Appointment
-              <span className="flex items-center justify-center w-8 h-8 rounded-full border-2 border-[#237E7B] group-hover:bg-[#237E7B] group-hover:text-white transition-all duration-300">
+              <span className="flex items-center justify-center w-8 h-8 rounded-full border-2 border-[#0C145D] group-hover:bg-[#0C145D] group-hover:text-white transition-all duration-300">
                 <svg
                   width="12"
                   height="12"
@@ -383,13 +383,13 @@ function CredentialRow({
 }) {
   return (
     <div className="flex items-start gap-4 p-4 bg-white rounded-xl border border-gray-100 shadow-sm">
-      <span className="flex-shrink-0 w-10 h-10 rounded-full bg-[#E8F4F4] flex items-center justify-center text-[#237E7B]">
+      <span className="flex-shrink-0 w-10 h-10 rounded-full bg-[#E8EBF8] flex items-center justify-center text-[#0C145D]">
         {icon}
       </span>
       <div>
         <p className="font-semibold text-gray-800 text-sm">{title}</p>
         <p className="text-gray-600 text-sm mt-0.5">{subtitle}</p>
-        <p className="text-[#237E7B] text-xs font-medium mt-1">{detail}</p>
+        <p className="text-[#0C145D] text-xs font-medium mt-1">{detail}</p>
       </div>
     </div>
   );
@@ -410,13 +410,13 @@ function CredentialsSection() {
         >
           <div className="flex items-center justify-center gap-3 mb-5">
             <span className="deco-line" />
-            <span className="text-[#237E7B] text-sm font-semibold uppercase tracking-widest">
+            <span className="text-[#0C145D] text-sm font-semibold uppercase tracking-widest">
               Professional Affiliations
             </span>
             <span className="deco-line" />
           </div>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
-            Active in Her <span className="text-[#237E7B]">Profession</span>
+            Active in Her <span className="text-[#0C145D]">Profession</span>
           </h2>
           <p className="mt-4 text-gray-500 text-lg">
             Dr. Habib maintains active membership in leading dental
@@ -452,7 +452,7 @@ function MembershipCard({
       style={{ transitionDelay: `${delay}ms` }}
     >
       <div className="h-full bg-[#F7F9F9] border border-gray-100 rounded-2xl p-7 hover:shadow-md hover:-translate-y-1 transition-all duration-300">
-        <div className="w-12 h-12 rounded-xl bg-[#237E7B] flex items-center justify-center mb-5">
+        <div className="w-12 h-12 rounded-xl bg-[#0C145D] flex items-center justify-center mb-5">
           <span className="text-white font-bold text-sm tracking-wide">
             {membership.abbr}
           </span>
@@ -492,13 +492,13 @@ function MissionSection() {
           >
             <div className="flex items-center gap-3 mb-5">
               <span className="deco-line" />
-              <span className="text-[#237E7B] text-sm font-semibold uppercase tracking-widest">
+              <span className="text-[#0C145D] text-sm font-semibold uppercase tracking-widest">
                 Her Mission
               </span>
             </div>
             <h2 className="font-display text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-6">
               A Welcoming Space{" "}
-              <span className="text-[#237E7B]">for Every Patient</span>
+              <span className="text-[#0C145D]">for Every Patient</span>
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed mb-6">
               With a personal mission to create a welcoming and supportive
@@ -512,12 +512,12 @@ function MissionSection() {
             </p>
 
             {/* Pull quote */}
-            <div className="border-l-4 border-[#237E7B] pl-5 bg-white rounded-r-xl py-5 pr-5 shadow-sm">
+            <div className="border-l-4 border-[#0C145D] pl-5 bg-white rounded-r-xl py-5 pr-5 shadow-sm">
               <p className="text-gray-700 italic text-base leading-relaxed">
                 &ldquo;My greatest reward is seeing a patient leave with a smile
                 they&rsquo;re proud to share with the world.&rdquo;
               </p>
-              <p className="text-[#237E7B] font-semibold text-sm mt-3">
+              <p className="text-[#0C145D] font-semibold text-sm mt-3">
                 — Dr. Robina Habib
               </p>
             </div>
@@ -534,7 +534,7 @@ function MissionSection() {
           >
             <div className="flex items-center gap-3 mb-5">
               <span className="deco-line" />
-              <span className="text-[#237E7B] text-sm font-semibold uppercase tracking-widest">
+              <span className="text-[#0C145D] text-sm font-semibold uppercase tracking-widest">
                 Community Involvement
               </span>
             </div>
@@ -569,13 +569,13 @@ function MissionSection() {
                 },
               ].map((item) => (
                 <li key={item.title} className="flex items-start gap-4">
-                  <span className="flex-shrink-0 mt-1 w-5 h-5 rounded-full bg-[#E8F4F4] flex items-center justify-center">
+                  <span className="flex-shrink-0 mt-1 w-5 h-5 rounded-full bg-[#E8EBF8] flex items-center justify-center">
                     <svg
                       width="10"
                       height="10"
                       viewBox="0 0 10 10"
                       fill="none"
-                      stroke="#237E7B"
+                      stroke="#0C145D"
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -621,13 +621,13 @@ function PersonalSection() {
         >
           <div className="flex items-center justify-center gap-3 mb-5">
             <span className="deco-line" />
-            <span className="text-[#237E7B] text-sm font-semibold uppercase tracking-widest">
+            <span className="text-[#0C145D] text-sm font-semibold uppercase tracking-widest">
               Beyond the Clinic
             </span>
             <span className="deco-line" />
           </div>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
-            The Person Behind <span className="text-[#237E7B]">the Smile</span>
+            The Person Behind <span className="text-[#0C145D]">the Smile</span>
           </h2>
           <p className="mt-4 text-gray-500 text-lg">
             Dr. Habib brings the same creativity, leadership, and curiosity
@@ -651,7 +651,7 @@ function PersonalSection() {
                 className="flex flex-col items-center gap-3 p-6 bg-[#F7F9F9] rounded-2xl border border-gray-100 hover:shadow-md hover:-translate-y-1 transition-all duration-300"
                 style={{ transitionDelay: `${i * 60}ms` }}
               >
-                <span className="text-[#237E7B]">{item.icon}</span>
+                <span className="text-[#0C145D]">{item.icon}</span>
                 <p className="font-semibold text-gray-700 text-sm text-center">
                   {item.label}
                 </p>

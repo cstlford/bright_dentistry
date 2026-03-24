@@ -40,13 +40,13 @@
   --radius-xl: calc(var(--radius) + 4px);
 
   /* Brand colors */
-  --color-teal: #237E7B;
-  --color-teal-light: #2FA8A5;
-  --color-teal-lighter: #4BBFBC;
-  --color-teal-dark: #1A5C59;
-  --color-teal-deeper: #124240;
-  --color-teal-pale: #E8F4F4;
-  --color-teal-mist: #F0F9F9;
+  --color-teal: #0C145D;
+  --color-teal-light: #1455B8;
+  --color-teal-lighter: #1967D2;
+  --color-teal-dark: #08103F;
+  --color-teal-deeper: #050A2A;
+  --color-teal-pale: #E8EBF8;
+  --color-teal-mist: #F0F2FF;
   --color-off-white: #F7F9F9;
 }
 
@@ -58,26 +58,26 @@
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.145 0 0);
-  --primary: #237E7B;
+  --primary: #0C145D;
   --primary-foreground: #ffffff;
-  --secondary: #E8F4F4;
-  --secondary-foreground: #1A5C59;
+  --secondary: #E8EBF8;
+  --secondary-foreground: #08103F;
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
-  --accent: #E8F4F4;
-  --accent-foreground: #237E7B;
+  --accent: #E8EBF8;
+  --accent-foreground: #0C145D;
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
-  --ring: #237E7B;
+  --ring: #0C145D;
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: #237E7B;
+  --sidebar-primary: #0C145D;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #E8F4F4;
-  --sidebar-accent-foreground: #237E7B;
+  --sidebar-accent: #E8EBF8;
+  --sidebar-accent-foreground: #0C145D;
   --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: #237E7B;
+  --sidebar-ring: #0C145D;
 }
 
 @layer base {
@@ -200,10 +200,10 @@
 .text-shimmer {
   background: linear-gradient(
     90deg,
-    #237E7B 0%,
-    #4BBFBC 30%,
-    #237E7B 60%,
-    #1A5C59 100%
+    #0C145D 0%,
+    #1967D2 30%,
+    #0C145D 60%,
+    #08103F 100%
   );
   background-size: 200% auto;
   -webkit-background-clip: text;
@@ -247,7 +247,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #237E7B;
+  background-color: #0C145D;
   transition: width 0.3s ease;
 }
 .nav-link:hover::after {
@@ -259,6 +259,6 @@
   display: inline-block;
   width: 48px;
   height: 3px;
-  background: #237E7B;
+  background: #0C145D;
   border-radius: 2px;
 }

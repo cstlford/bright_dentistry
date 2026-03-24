@@ -96,10 +96,10 @@ export default function NewPatientsPage() {
   return (
     <>
       {/* ── Hero ─────────────────────────────────────────────── */}
-      <section className="relative pt-32 pb-24 bg-[#124240] overflow-hidden">
+      <section className="relative pt-32 pb-24 bg-[#050A2A] overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full bg-[#237E7B]/30 blur-3xl" />
-          <div className="absolute -bottom-48 -left-24 w-[400px] h-[400px] rounded-full bg-[#2FA8A5]/20 blur-3xl" />
+          <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full bg-[#0C145D]/30 blur-3xl" />
+          <div className="absolute -bottom-48 -left-24 w-[400px] h-[400px] rounded-full bg-[#1455B8]/20 blur-3xl" />
           <div
             className="absolute inset-0 opacity-5"
             style={{
@@ -110,11 +110,11 @@ export default function NewPatientsPage() {
         </div>
         <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
           <div className="flex items-center justify-center gap-3 mb-5">
-            <span className="w-8 h-px bg-[#4BBFBC]" />
-            <span className="text-[#4BBFBC] text-sm font-semibold uppercase tracking-widest">
+            <span className="w-8 h-px bg-[#1967D2]" />
+            <span className="text-[#1967D2] text-sm font-semibold uppercase tracking-widest">
               New Patients
             </span>
-            <span className="w-8 h-px bg-[#4BBFBC]" />
+            <span className="w-8 h-px bg-[#1967D2]" />
           </div>
           <h1 className="font-display text-5xl md:text-6xl font-bold text-white leading-tight mb-5">
             We&rsquo;re Glad You&rsquo;re Here
@@ -141,13 +141,13 @@ export default function NewPatientsPage() {
       <InsuranceSection onContact={() => setModalOpen(true)} />
 
       {/* ── CTA ──────────────────────────────────────────────── */}
-      <section className="relative py-20 overflow-hidden bg-[#124240]">
+      <section className="relative py-20 overflow-hidden bg-[#0C145D]">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full bg-[#237E7B]/25 blur-3xl" />
-          <div className="absolute -bottom-24 -left-24 w-[400px] h-[400px] rounded-full bg-[#2FA8A5]/15 blur-3xl" />
+          <div className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full bg-[#0C145D]/25 blur-3xl" />
+          <div className="absolute -bottom-24 -left-24 w-[400px] h-[400px] rounded-full bg-[#1455B8]/15 blur-3xl" />
         </div>
         <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
-          <p className="text-[#7ED8D5] text-sm font-semibold uppercase tracking-widest mb-4">
+          <p className="text-[#7AB8F5] text-sm font-semibold uppercase tracking-widest mb-4">
             Ready to Get Started?
           </p>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
@@ -163,7 +163,7 @@ export default function NewPatientsPage() {
               className="group flex items-center gap-4 text-white"
             >
               <span className="text-lg font-semibold">Request an Appointment</span>
-              <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-white/40 group-hover:border-white group-hover:bg-white group-hover:text-[#237E7B] transition-all duration-300 group-hover:translate-x-1">
+              <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-white/40 group-hover:border-white group-hover:bg-white group-hover:text-[#0C145D] transition-all duration-300 group-hover:translate-x-1">
                 <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M2 9h14M10 3l6 6-6 6" />
                 </svg>
@@ -203,13 +203,13 @@ function WhatToExpectSection() {
         >
           <div className="flex items-center justify-center gap-3 mb-5">
             <span className="deco-line" />
-            <span className="text-[#237E7B] text-sm font-semibold uppercase tracking-widest">
+            <span className="text-[#0C145D] text-sm font-semibold uppercase tracking-widest">
               Your First Visit
             </span>
             <span className="deco-line" />
           </div>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
-            What to <span className="text-[#237E7B]">Expect</span>
+            What to <span className="text-[#0C145D]">Expect</span>
           </h2>
           <p className="mt-4 text-gray-500 text-lg">
             We keep things simple, comfortable, and unhurried. Here&rsquo;s how
@@ -220,7 +220,7 @@ function WhatToExpectSection() {
         {/* Steps */}
         <div className="relative max-w-4xl mx-auto">
           {/* Vertical connector line */}
-          <div className="absolute left-8 top-10 bottom-10 w-px bg-gradient-to-b from-[#237E7B]/40 via-[#237E7B]/20 to-transparent hidden sm:block" />
+          <div className="absolute left-8 top-10 bottom-10 w-px bg-gradient-to-b from-[#0C145D]/40 via-[#0C145D]/20 to-transparent hidden sm:block" />
 
           <div className="space-y-6">
             {WHAT_TO_EXPECT.map((item, i) => (
@@ -251,7 +251,7 @@ function StepCard({
       style={{ transitionDelay: `${delay}ms` }}
     >
       <div className="flex items-start gap-6 bg-white rounded-2xl p-7 border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300">
-        <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-gradient-to-br from-[#237E7B] to-[#1A5C59] flex items-center justify-center shadow-md">
+        <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-gradient-to-br from-[#0C145D] to-[#08103F] flex items-center justify-center shadow-md">
           <span className="text-white font-display font-bold text-lg">{item.step}</span>
         </div>
         <div className="pt-1">
@@ -278,13 +278,13 @@ function WhatToBringSection() {
         >
           <div className="flex items-center justify-center gap-3 mb-5">
             <span className="deco-line" />
-            <span className="text-[#237E7B] text-sm font-semibold uppercase tracking-widest">
+            <span className="text-[#0C145D] text-sm font-semibold uppercase tracking-widest">
               Be Prepared
             </span>
             <span className="deco-line" />
           </div>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
-            What to <span className="text-[#237E7B]">Bring</span>
+            What to <span className="text-[#0C145D]">Bring</span>
           </h2>
           <p className="mt-4 text-gray-500 text-lg">
             Having a few things ready will help your first visit go smoothly.
@@ -319,7 +319,7 @@ function BringCard({
       style={{ transitionDelay: `${delay}ms` }}
     >
       <div className="flex items-start gap-4 p-6 bg-[#F7F9F9] rounded-2xl border border-gray-100 hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 h-full">
-        <span className="flex-shrink-0 w-10 h-10 rounded-xl bg-[#E8F4F4] flex items-center justify-center text-[#237E7B] mt-0.5">
+        <span className="flex-shrink-0 w-10 h-10 rounded-xl bg-[#E8EBF8] flex items-center justify-center text-[#0C145D] mt-0.5">
           {item.icon}
         </span>
         <div>
@@ -346,12 +346,12 @@ function InsuranceSection({ onContact }: { onContact: () => void }) {
         >
           <div className="bg-white rounded-3xl border border-gray-100 shadow-sm overflow-hidden">
             {/* Top accent bar */}
-            <div className="h-1.5 bg-gradient-to-r from-[#237E7B] via-[#4BBFBC] to-[#237E7B]" />
+            <div className="h-1.5 bg-gradient-to-r from-[#0C145D] via-[#1967D2] to-[#0C145D]" />
 
             <div className="p-10 md:p-14">
               <div className="flex flex-col md:flex-row md:items-start gap-8">
                 {/* Icon */}
-                <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-[#E8F4F4] flex items-center justify-center text-[#237E7B]">
+                <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-[#E8EBF8] flex items-center justify-center text-[#0C145D]">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" className="w-7 h-7">
                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
                     <path d="M9 12l2 2 4-4" />
@@ -362,7 +362,7 @@ function InsuranceSection({ onContact }: { onContact: () => void }) {
                 <div className="flex-1">
                   <div className="flex items-center gap-3 mb-3">
                     <span className="deco-line" />
-                    <span className="text-[#237E7B] text-sm font-semibold uppercase tracking-widest">
+                    <span className="text-[#0C145D] text-sm font-semibold uppercase tracking-widest">
                       Insurance & Payment
                     </span>
                   </div>
@@ -385,7 +385,7 @@ function InsuranceSection({ onContact }: { onContact: () => void }) {
                   <div className="flex flex-col sm:flex-row gap-4">
                     <a
                       href="tel:4235412777"
-                      className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#237E7B] text-white font-semibold text-sm hover:bg-[#1A5C59] transition-colors duration-200"
+                      className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-[#0C145D] text-white font-semibold text-sm hover:bg-[#08103F] transition-colors duration-200"
                     >
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" className="w-4 h-4">
                         <path d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 0112 18.85a19.5 19.5 0 01-5.1-5.1 19.79 19.79 0 01-3.07-8.67A2 2 0 015.73 3h3a2 2 0 012 1.72c.127.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L9.91 10.91A16 16 0 0016.09 17l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.573 2.81.7A2 2 0 0122 16.92z" />
@@ -394,7 +394,7 @@ function InsuranceSection({ onContact }: { onContact: () => void }) {
                     </a>
                     <button
                       onClick={onContact}
-                      className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border-2 border-[#237E7B] text-[#237E7B] font-semibold text-sm hover:bg-[#237E7B] hover:text-white transition-all duration-200"
+                      className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl border-2 border-[#0C145D] text-[#0C145D] font-semibold text-sm hover:bg-[#0C145D] hover:text-white transition-all duration-200"
                     >
                       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" className="w-4 h-4">
                         <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />

@@ -30,7 +30,7 @@ export async function POST(req: NextRequest) {
       subject: `New Appointment Request — ${name}`,
       html: `
         <div style="font-family: sans-serif; max-width: 560px; margin: 0 auto; color: #1a1a1a;">
-          <div style="background: #237E7B; padding: 24px 32px; border-radius: 12px 12px 0 0;">
+          <div style="background: #0C145D; padding: 24px 32px; border-radius: 12px 12px 0 0;">
             <h1 style="color: white; margin: 0; font-size: 20px; font-weight: 600;">
               New Appointment Request
             </h1>
@@ -71,8 +71,8 @@ export async function POST(req: NextRequest) {
               </tr>` : ""}
             </table>
 
-            <div style="margin-top: 24px; padding: 16px; background: #e8f4f4; border-radius: 8px; border-left: 4px solid #237E7B;">
-              <p style="margin: 0; font-size: 13px; color: #237E7B; font-weight: 600;">
+            <div style="margin-top: 24px; padding: 16px; background: #e8f4f4; border-radius: 8px; border-left: 4px solid #0C145D;">
+              <p style="margin: 0; font-size: 13px; color: #0C145D; font-weight: 600;">
                 Action Required: Please contact ${name} to confirm their appointment.
               </p>
             </div>

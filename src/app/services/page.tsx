@@ -104,10 +104,10 @@ export default function ServicesPage() {
   return (
     <>
       {/* Page hero */}
-      <section className="relative pt-32 pb-24 bg-[#124240] overflow-hidden">
+      <section className="relative pt-32 pb-24 bg-[#050A2A] overflow-hidden">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full bg-[#237E7B]/30 blur-3xl" />
-          <div className="absolute -bottom-48 -left-24 w-[400px] h-[400px] rounded-full bg-[#2FA8A5]/20 blur-3xl" />
+          <div className="absolute -top-32 -right-32 w-[600px] h-[600px] rounded-full bg-[#0C145D]/30 blur-3xl" />
+          <div className="absolute -bottom-48 -left-24 w-[400px] h-[400px] rounded-full bg-[#1455B8]/20 blur-3xl" />
           <div
             className="absolute inset-0 opacity-5"
             style={{
@@ -119,11 +119,11 @@ export default function ServicesPage() {
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
           <div className="flex items-center justify-center gap-3 mb-5">
-            <span className="w-8 h-px bg-[#4BBFBC]" />
-            <span className="text-[#4BBFBC] text-sm font-semibold uppercase tracking-widest">
+            <span className="w-8 h-px bg-[#1967D2]" />
+            <span className="text-[#1967D2] text-sm font-semibold uppercase tracking-widest">
               What We Offer
             </span>
-            <span className="w-8 h-px bg-[#4BBFBC]" />
+            <span className="w-8 h-px bg-[#1967D2]" />
           </div>
           <h1 className="font-display text-5xl md:text-6xl font-bold text-white leading-tight mb-5">
             Our Services
@@ -175,13 +175,13 @@ export default function ServicesPage() {
       ))}
 
       {/* Bottom CTA */}
-      <section className="relative py-20 overflow-hidden bg-[#124240]">
+      <section className="relative py-20 overflow-hidden bg-[#0C145D]">
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full bg-[#237E7B]/25 blur-3xl" />
-          <div className="absolute -bottom-24 -left-24 w-[400px] h-[400px] rounded-full bg-[#2FA8A5]/15 blur-3xl" />
+          <div className="absolute -top-32 -right-32 w-[500px] h-[500px] rounded-full bg-[#0C145D]/25 blur-3xl" />
+          <div className="absolute -bottom-24 -left-24 w-[400px] h-[400px] rounded-full bg-[#1455B8]/15 blur-3xl" />
         </div>
         <div className="relative z-10 max-w-3xl mx-auto px-6 text-center">
-          <p className="text-[#7ED8D5] text-sm font-semibold uppercase tracking-widest mb-4">
+          <p className="text-[#7AB8F5] text-sm font-semibold uppercase tracking-widest mb-4">
             Ready to Get Started?
           </p>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
@@ -199,7 +199,7 @@ export default function ServicesPage() {
               <span className="text-lg font-semibold">
                 Request an Appointment
               </span>
-              <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-white/40 group-hover:border-white group-hover:bg-white group-hover:text-[#237E7B] transition-all duration-300 group-hover:translate-x-1">
+              <span className="flex items-center justify-center w-12 h-12 rounded-full border-2 border-white/40 group-hover:border-white group-hover:bg-white group-hover:text-[#0C145D] transition-all duration-300 group-hover:translate-x-1">
                 <svg
                   width="18"
                   height="18"
@@ -284,7 +284,7 @@ function ServiceSection({
           >
             <div className="flex items-center gap-3 mb-5">
               <span className="deco-line" />
-              <span className="text-[#237E7B] text-sm font-semibold uppercase tracking-widest">
+              <span className="text-[#0C145D] text-sm font-semibold uppercase tracking-widest">
                 {svc.tagline}
               </span>
             </div>
@@ -299,13 +299,13 @@ function ServiceSection({
             <ul className="space-y-3 mb-10">
               {svc.highlights.map((item) => (
                 <li key={item} className="flex items-center gap-3 text-gray-700">
-                  <span className="flex-shrink-0 w-5 h-5 rounded-full bg-[#E8F4F4] flex items-center justify-center">
+                  <span className="flex-shrink-0 w-5 h-5 rounded-full bg-[#E8EBF8] flex items-center justify-center">
                     <svg
                       width="10"
                       height="10"
                       viewBox="0 0 10 10"
                       fill="none"
-                      stroke="#237E7B"
+                      stroke="#0C145D"
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
@@ -320,10 +320,10 @@ function ServiceSection({
 
             <button
               onClick={onBooking}
-              className="group inline-flex items-center gap-3 text-[#237E7B] font-semibold text-sm hover:gap-4 transition-all duration-300"
+              className="group inline-flex items-center gap-3 text-[#0C145D] font-semibold text-sm hover:gap-4 transition-all duration-300"
             >
               Request Appointment
-              <span className="flex items-center justify-center w-8 h-8 rounded-full border-2 border-[#237E7B] group-hover:bg-[#237E7B] group-hover:text-white transition-all duration-300">
+              <span className="flex items-center justify-center w-8 h-8 rounded-full border-2 border-[#0C145D] group-hover:bg-[#0C145D] group-hover:text-white transition-all duration-300">
                 <svg
                   width="12"
                   height="12"
@@ -351,7 +351,7 @@ function ServiceSection({
                 : "opacity-0 -translate-x-10"
             }`}
           >
-            <div className="absolute -inset-4 bg-[#E8F4F4] rounded-3xl -z-10 rotate-2" />
+            <div className="absolute -inset-4 bg-[#E8EBF8] rounded-3xl -z-10 rotate-2" />
             <div className="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-2xl">
               <Image
                 src={svc.image}
@@ -360,8 +360,8 @@ function ServiceSection({
                 className="object-cover object-center"
               />
             </div>
-            <div className="absolute -bottom-4 -right-4 w-16 h-16 rounded-full bg-[#237E7B]/15" />
-            <div className="absolute -top-4 -left-4 w-10 h-10 rounded-full border-4 border-[#237E7B]/30" />
+            <div className="absolute -bottom-4 -right-4 w-16 h-16 rounded-full bg-[#0C145D]/15" />
+            <div className="absolute -top-4 -left-4 w-10 h-10 rounded-full border-4 border-[#0C145D]/30" />
           </div>
         </div>
       </div>

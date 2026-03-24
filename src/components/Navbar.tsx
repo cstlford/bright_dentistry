@@ -6,15 +6,15 @@ import Image from "next/image";
 import AppointmentModal from "./AppointmentModal";
 
 const NAV_LINKS = [
-  { label: "Home",     href: "/" },
+  { label: "Home", href: "/" },
   { label: "Services", href: "/services" },
-  { label: "About",    href: "/about" },
+  { label: "About", href: "/about" },
   { label: "New Patients", href: "/new-patients" },
 ];
 
 export default function Navbar() {
-  const [scrolled, setScrolled]   = useState(false);
-  const [menuOpen, setMenuOpen]   = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
@@ -36,7 +36,9 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="relative flex-shrink-0">
             <Image
-              src={scrolled ? "/bright_logo_teal.svg" : "/bright_logo_white.svg"}
+              src={
+                scrolled ? "/bright_logo_blue.svg" : "/bright_logo_white.svg"
+              }
               alt="Bright Family Dentistry"
               width={220}
               height={64}
@@ -52,7 +54,9 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 className={`nav-link text-sm font-medium tracking-wide transition-colors duration-200 ${
-                  scrolled ? "text-gray-700 hover:text-[#237E7B]" : "text-white/90 hover:text-white"
+                  scrolled
+                    ? "text-gray-700 hover:text-[#0C145D]"
+                    : "text-white/90 hover:text-white"
                 }`}
               >
                 {link.label}
@@ -65,11 +69,11 @@ export default function Navbar() {
             <button
               onClick={() => setModalOpen(true)}
               className={`group flex items-center gap-2 text-sm font-semibold tracking-wide transition-all duration-300 ${
-                scrolled ? "text-[#237E7B]" : "text-white"
+                scrolled ? "text-[#0C145D]" : "text-white"
               }`}
             >
               Request Appointment
-              <span className="inline-flex items-center justify-center w-8 h-8 rounded-full border-2 transition-all duration-300 group-hover:translate-x-1 group-hover:bg-[#237E7B] group-hover:border-[#237E7B] group-hover:text-white border-current">
+              <span className="inline-flex items-center justify-center w-8 h-8 rounded-full border-2 transition-all duration-300 group-hover:translate-x-1 group-hover:bg-[#0C145D] group-hover:border-[#0C145D] group-hover:text-white border-current">
                 <svg
                   width="14"
                   height="14"
@@ -95,10 +99,10 @@ export default function Navbar() {
             <span
               className={`block h-0.5 w-6 transition-all duration-300 ${
                 menuOpen
-                  ? "rotate-45 translate-y-2 bg-[#237E7B]"
+                  ? "rotate-45 translate-y-2 bg-[#0C145D]"
                   : scrolled
-                  ? "bg-gray-700"
-                  : "bg-white"
+                    ? "bg-gray-700"
+                    : "bg-white"
               }`}
             />
             <span
@@ -109,10 +113,10 @@ export default function Navbar() {
             <span
               className={`block h-0.5 w-6 transition-all duration-300 ${
                 menuOpen
-                  ? "-rotate-45 -translate-y-2 bg-[#237E7B]"
+                  ? "-rotate-45 -translate-y-2 bg-[#0C145D]"
                   : scrolled
-                  ? "bg-gray-700"
-                  : "bg-white"
+                    ? "bg-gray-700"
+                    : "bg-white"
               }`}
             />
           </button>
@@ -129,15 +133,18 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-gray-700 font-medium hover:text-[#237E7B] transition-colors"
+                className="text-gray-700 font-medium hover:text-[#0C145D] transition-colors"
                 onClick={() => setMenuOpen(false)}
               >
                 {link.label}
               </Link>
             ))}
             <button
-              onClick={() => { setModalOpen(true); setMenuOpen(false); }}
-              className="mt-2 text-left text-[#237E7B] font-semibold flex items-center gap-2"
+              onClick={() => {
+                setModalOpen(true);
+                setMenuOpen(false);
+              }}
+              className="mt-2 text-left text-[#0C145D] font-semibold flex items-center gap-2"
             >
               Request Appointment →
             </button>

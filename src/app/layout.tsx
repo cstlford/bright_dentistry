@@ -28,6 +28,27 @@ export const metadata: Metadata = {
     "Medicaid dentist",
     "Dr. Robina Habib",
   ],
+  openGraph: {
+    title: "Bright Family Dentistry | Chattanooga, TN",
+    description:
+      "Compassionate dental care for the whole family in Chattanooga, TN. Cosmetic, emergency, family & Medicaid-accepting dentistry with Dr. Robina Habib.",
+    images: [
+      {
+        url: "/robina-habib.PNG",
+        width: 600,
+        height: 750,
+        alt: "Dr. Robina Habib — Bright Family Dentistry",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bright Family Dentistry | Chattanooga, TN",
+    description:
+      "Compassionate dental care for the whole family in Chattanooga, TN. Cosmetic, emergency, family & Medicaid-accepting dentistry with Dr. Robina Habib.",
+    images: ["/robina-habib.PNG"],
+  },
 };
 
 export default function RootLayout({

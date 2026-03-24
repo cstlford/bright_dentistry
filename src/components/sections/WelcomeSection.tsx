@@ -63,14 +63,14 @@ export default function WelcomeSection() {
             {/* Eyebrow */}
             <div className="flex items-center gap-3 mb-5">
               <span className="deco-line" />
-              <span className="text-[#237E7B] text-sm font-semibold uppercase tracking-widest">
+              <span className="text-[#0C145D] text-sm font-semibold uppercase tracking-widest">
                 Our Practice
               </span>
             </div>
 
             <h2 className="font-display text-4xl md:text-5xl font-bold text-gray-800 leading-tight mb-6">
               Welcome to{" "}
-              <span className="text-[#237E7B]">Bright Family</span>{" "}
+              <span className="text-[#0C145D]">Bright Family</span>{" "}
               Dentistry
             </h2>
 
@@ -89,7 +89,7 @@ export default function WelcomeSection() {
                   className="flex items-start gap-3 p-4 rounded-xl bg-white border border-gray-100 shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all duration-300"
                   style={{ transitionDelay: `${i * 80}ms` }}
                 >
-                  <span className="flex-shrink-0 text-[#237E7B] mt-0.5">{p.icon}</span>
+                  <span className="flex-shrink-0 text-[#0C145D] mt-0.5">{p.icon}</span>
                   <div>
                     <p className="font-semibold text-gray-800 text-sm">{p.label}</p>
                     <p className="text-gray-500 text-xs mt-0.5">{p.desc}</p>
@@ -100,7 +100,7 @@ export default function WelcomeSection() {
 
             {/* Accepting note */}
             <div className="mt-6 flex items-center gap-2 text-sm text-gray-500">
-              <span className="inline-block w-2 h-2 rounded-full bg-[#2FA8A5] animate-pulse" />
+              <span className="inline-block w-2 h-2 rounded-full bg-[#1455B8] animate-pulse" />
               Now accepting new patients &amp; Medicaid
             </div>
           </div>
@@ -113,10 +113,10 @@ export default function WelcomeSection() {
             }`}
           >
             {/* Decorative background blob */}
-            <div className="absolute -inset-6 bg-[#E8F4F4] rounded-3xl -z-10 rotate-2" />
+            <div className="absolute -inset-6 bg-[#E8EBF8] rounded-3xl -z-10 rotate-2" />
 
             {/* Placeholder image frame */}
-            <div className="relative rounded-2xl overflow-hidden aspect-[4/5] bg-gradient-to-br from-[#2FA8A5] to-[#124240] shadow-2xl">
+            <div className="relative rounded-2xl overflow-hidden aspect-[4/5] bg-gradient-to-br from-[#1455B8] to-[#050A2A] shadow-2xl">
               {/* Decorative overlay pattern */}
               <div className="absolute inset-0 opacity-10"
                 style={{
@@ -137,7 +137,7 @@ export default function WelcomeSection() {
               {/* Accent card */}
               <div className="absolute bottom-6 left-6 right-6 bg-white/10 backdrop-blur-md border border-white/20 rounded-xl px-5 py-4">
                 <div className="flex items-center gap-3">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#237E7B] flex items-center justify-center">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[#0C145D] flex items-center justify-center">
                     <svg viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" className="w-5 h-5">
                       <path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
                     </svg>
@@ -151,8 +151,8 @@ export default function WelcomeSection() {
             </div>
 
             {/* Small accent shape */}
-            <div className="absolute -bottom-4 -right-4 w-20 h-20 rounded-full bg-[#237E7B]/15" />
-            <div className="absolute -top-4 -left-4 w-12 h-12 rounded-full border-4 border-[#237E7B]/30" />
+            <div className="absolute -bottom-4 -right-4 w-20 h-20 rounded-full bg-[#0C145D]/15" />
+            <div className="absolute -top-4 -left-4 w-12 h-12 rounded-full border-4 border-[#0C145D]/30" />
           </div>
         </div>
       </div>

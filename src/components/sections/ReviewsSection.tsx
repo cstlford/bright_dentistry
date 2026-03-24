@@ -8,7 +8,7 @@ const REVIEWS = [
     date: "Verified Patient",
     rating: 5,
     avatar: "GM",
-    color: "bg-[#237E7B]",
+    color: "bg-[#0C145D]",
     review:
       "My Mother is 90 years old. Dr. Habib has been taking care of my Mother's oral issues. She has given her a new bridge and saved two of her teeth with fillings. She is kind to my Mother who has dementia and takes great care to make her feel secure. My Mother and I are very fortunate to have been Dr. Habib's patient. She has been a God wink for us!",
     service: "Family Dentistry",
@@ -18,7 +18,7 @@ const REVIEWS = [
     date: "Verified Patient",
     rating: 5,
     avatar: "★",
-    color: "bg-[#1A5C59]",
+    color: "bg-[#08103F]",
     review:
       "I absolutely loved the experience. Dr. Habib was so understanding. I would be happy to go again. She is a great dentist who I strongly recommend to anyone feeling nervous or anxious at first. Thank you!",
     service: "General Care",
@@ -28,7 +28,7 @@ const REVIEWS = [
     date: "Verified Patient",
     rating: 5,
     avatar: "MA",
-    color: "bg-[#2FA8A5]",
+    color: "bg-[#1455B8]",
     review:
       "Thank you, Dr. Habib. I had the best experience with you and your staff. You sat down with me and gave me the most thorough consultation I've ever had. You made it easy for me to understand my treatment plan. By the time I left, I felt very comfortable with you and my hygienist.",
     service: "Consultation",
@@ -73,13 +73,13 @@ export default function ReviewsSection() {
         >
           <div className="flex items-center justify-center gap-3 mb-5">
             <span className="deco-line" />
-            <span className="text-[#237E7B] text-sm font-semibold uppercase tracking-widest">
+            <span className="text-[#0C145D] text-sm font-semibold uppercase tracking-widest">
               Patient Stories
             </span>
             <span className="deco-line" />
           </div>
           <h2 className="font-display text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
-            What Our Patients <span className="text-[#237E7B]">Are Saying</span>
+            What Our Patients <span className="text-[#0C145D]">Are Saying</span>
           </h2>
           <div className="mt-4 flex items-center justify-center gap-2">
             <Stars count={5} />
@@ -118,14 +118,14 @@ function ReviewCard({
       style={{ transitionDelay: `${index * 100}ms` }}
     >
       {/* Quote mark */}
-      <div className="absolute top-6 right-6 text-[#237E7B]/10 font-display text-8xl font-bold leading-none select-none pointer-events-none">
+      <div className="absolute top-6 right-6 text-[#0C145D]/10 font-display text-8xl font-bold leading-none select-none pointer-events-none">
         &ldquo;
       </div>
 
       {/* Stars + service badge */}
       <div className="flex items-start justify-between mb-4">
         <Stars count={review.rating} />
-        <span className="text-xs bg-[#E8F4F4] text-[#237E7B] font-medium px-2.5 py-1 rounded-full">
+        <span className="text-xs bg-[#E8EBF8] text-[#0C145D] font-medium px-2.5 py-1 rounded-full">
           {review.service}
         </span>
       </div>
